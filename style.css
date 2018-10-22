@@ -1,0 +1,17 @@
+.image{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+.header{
+    background-color: #eee8aa;
+}
+.heading{
+    font-size: 36px;
+    color: #fff;
+    /* font-weight: 400px; */
+    margin: 10%;
+}
+.align{
+    margin: 5%;
+}
