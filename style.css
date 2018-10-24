@@ -1,17 +1,67 @@
+.container{
+    margin: 8px;
+}
 .image{
     border-radius: 50%;
     height: 150px;
     width: 150px;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+.border{
+    background-color: #a54427da;
+    border-radius: 50%;
+    border: 1px solid #a54427da;
 }
 .header{
-    background-color: #eee8aa;
+    background-color: #fff;
+    margin: 5px;
+    /* border-radius: 50%; */
 }
 .heading{
-    font-size: 36px;
-    color: #fff;
-    /* font-weight: 400px; */
-    margin: 10%;
+    margin: 5px;
+    line-height: 36px;
+    color: black;
+    font-size: 24px;
+    /* margin: 10%; */
+}
+body{
+    overflow: hidden;
+}
+md-tab-content>div{
+    height: 60%;
+    overflow: auto;
+}
+.topic{
+    font-weight: bold;
+}
+.experience{
+    margin: 8px;
+    border: 1px dotted black;
+}
+.designation{
+    margin: 5px;
+    line-height: 24px;
+    color: black;
+    font-size: 14px;
 }
 .align{
-    margin: 5%;
+    margin: 3%;
+}
+md-tabs-canvas{
+    background-color: #bd5d38;
+}
+md-tabs md-ink-bar{
+    background: black
+}
+md-tabs .md-tab.md-active{
+    color: black;
+}
+.md-tab{
+    padding: 0;
+    padding-top: 12px;
+    padding-left: 24px;
+}
+md-tab-item{
+    color: black;
 }

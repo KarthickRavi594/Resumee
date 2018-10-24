@@ -1,10 +1,12 @@
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Angular Material style sheet -->
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body ng-app="BlankApp" ng-cloak>
   <!-- Angular Material requires Angular.js Libraries -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
@@ -14,14 +16,88 @@
 
   <!-- Angular Material Library -->
   <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
-  
+
   <!-- Your application bootstrap  -->
   <script src="script.js"></script>
-  <div layout class="header">
-    <img class="image" src="Karthick.jpg">
-    <div flex class="align">
-        <span class="heading">Karthick Ravichandran</span>
+  <div class="container">
+    <div layout class="header">
+      <div class="border">
+        <img class="image" src="Karthick.jpg">
+      </div>
+      <div flex class="align">
+        <span class="heading">Karthick Ravichandran</span><br>
+        <span class="designation">UI Developer</span><br>
+        <span class="designation">Java Developer</span>
+      </div>
+    </div>
+    <div>
+      <div class="content">
+        <md-tabs md-dynamic-height md-border-bottom>
+          <md-tab label="About">
+            <md-content class="md-padding">
+              <h1 class="md-display-2">Introduction</h1>
+              <p>I am Karthick RaviChandran, I completed M.Sc software engineering 5 year integrated course in Coimbatore institute of technology.</p>
+              <p>Currently I am working as an UI developer in a startup company(Ariveguru technologies pvt ltd) in Bangalore. </p>
+              <p>Also have one year internship experience in two various companies (Toshiba Software India pvt ltd & IBM India pvt ltd) as a Web Application Developer..</p>
+            </md-content>
+          </md-tab>
+          <md-tab label="Experience">
+            <md-content class="md-padding">
+              <h1 class="md-display-2">Experience</h1>
+              <div class="experience">
+              <p><span class="topic">Ariveguru technologies</span></p>
+              <p><span class="topic">Year : </span><span class="answer">Jan 2018 - Present</span></p>
+              <p><span class="topic">Topic : </span><span class="answer">Sharanasangama App</span></p>
+              <p><span class="topic">Description : </span><span class="answer">PWA application both mobile browser and desktop browser for a community based social media. (Vuetify Material)</span></p>
+              <p><span class="topic">Role : </span><span class="answer">UI Developer</span></p>
+            </div>
+            <div class="experience">
+              <p><span class="topic">Ariveguru technologies</span></p>
+              <p><span class="topic">Year : </span><span class="answer">Jan 2018 - Present</span></p>
+              <p><span class="topic">Topic : </span><span class="answer">Flip2Flex</span></p>
+              <p><span class="topic">Description : </span><span class="answer">Cisco team generates an offer for partner and their client. They need to manage the offer list with licOPS team and the client’s.(Angular Material)</span></p>
+              <p><span class="topic">Role : </span><span class="answer">UI Developer</span></p>
+              </div>
+              <div class="experience">
+              <p><span class="topic">IBM India pvt ltd</span></p>
+              <p><span class="topic">Year : </span><span class="answer">Jan 2017 - Jun - 2017</span></p>
+              <p><span class="topic">Topic : </span><span class="answer">Certification As A Service</span></p>
+              <p><span class="topic">Description : </span><span class="answer">IBM product teams that use IBM JDK need to certify their product by running the JCK test suite. But since JCK has already been run against the IBM JDK builds we just do a comparison of the JDK listings (Customer list with Reference list) in order to certify the IBM product.</span></p>
+              <p><span class="topic">Role : </span><span class="answer">Java Developer</span></p>
+              </div>
+              <div class="experience">
+              <p><span class="topic">Toshiba Software India pvt ltd</span></p>
+              <p><span class="topic">Year : </span><span class="answer">Jun 2015 - Nov - 2015</span></p>
+              <p><span class="topic">Topic : </span><span class="answer">Finance Regimentation</span></p>
+              <p><span class="topic">Description : </span><span class="answer">The project is used to keep track of the Statement of Work (SOW) and to maintain the financial status of all the projects and invoice of Toshiba Company.</span></p>
+              <p><span class="topic">Role : </span><span class="answer">Java Developer</span></p>
+              </div>
+            </md-content>
+          </md-tab>
+          <md-tab label="Education">
+            <md-content class="md-padding">
+              <h1 class="md-display-2">Tab Three</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus
+                volutpat
+                neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices.
+                Maecenas
+                lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+            </md-content>
+          </md-tab>
+          <md-tab label="Skills">
+              <md-content class="md-padding">
+                <h1 class="md-display-2">Tab Three</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus
+                  volutpat
+                  neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices.
+                  Maecenas
+                  lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+              </md-content>
+            </md-tab>
+        </md-tabs>
+      </div>
     </div>
   </div>
 </body>
+
 </html>
