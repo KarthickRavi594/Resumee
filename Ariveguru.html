@@ -1,0 +1,16 @@
+<md-dialog style="height:300px;" ng-controller="DemoCtrl">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <i class="fa fa-window-close" aria-hidden="true" ng-click="cancel()"></i>
+        </div>
+    </md-toolbar>
+    <md-dialog-content>
+        <div class="experience" ng-repeat="exp in ariveguru">
+            <p><span class="topic">{{exp.place}}</span></p>
+            <p><span class="topic">Year : </span><span class="answer">{{exp.Year}}</span></p>
+            <p><span class="topic">Topic : </span><span class="answer">{{exp.Topic}}</span></p>
+            <p><span class="topic">Description : </span><span class="answer">{{exp.Description}}</span></p>
+            <p><span class="topic">Role : </span><span class="answer">{{exp.Role}}</span></p>
+        </div>
+    </md-dialog-content>
+</md-dialog>

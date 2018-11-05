@@ -19,15 +19,19 @@
 
   <!-- Your application bootstrap  -->
   <script src="script.js"></script>
-  <div class="container">
+  <div class="container" ng-controller="DemoCtrl">
     <div layout class="header">
-      <div class="border">
+      <div flex="12" class="border">
         <img class="image" src="Karthick.jpg">
       </div>
-      <div flex class="align">
+      <div flex="30" class="align">
         <span class="heading">Karthick Ravichandran</span><br>
-        <span class="designation">UI Developer</span><br>
-        <span class="designation">Java Developer</span>
+        <span class="designation" ng-repeat="roles in Designation">{{roles.role}}<br></span>
+      </div>
+      <div flex="55" class="details">
+        <div class="contact">{{contact.address}}<br></div>
+        <div class="contact">{{contact.mobile}}<br></div>
+        <div class="contact">{{contact.email}}<br></div>
       </div>
     </div>
     <div>
@@ -36,41 +40,21 @@
           <md-tab label="About">
             <md-content class="md-padding">
               <h1 class="md-display-2">Introduction</h1>
-              <p>I am Karthick RaviChandran, I completed M.Sc software engineering 5 year integrated course in Coimbatore institute of technology.</p>
-              <p>Currently I am working as an UI developer in a startup company(Ariveguru technologies pvt ltd) in Bangalore. </p>
-              <p>Also have one year internship experience in two various companies (Toshiba Software India pvt ltd & IBM India pvt ltd) as a Web Application Developer..</p>
+              <p>I am Karthick RaviChandran, I completed M.Sc software engineering 5 year integrated course in
+                Coimbatore institute of technology.</p>
+              <p>Currently I am working as an UI developer in a startup company(Ariveguru technologies pvt ltd) in
+                Bangalore. </p>
+              <p>Also have one year internship experience in two various companies (Toshiba Software India pvt ltd &
+                IBM India pvt ltd) as a Web Application Developer..</p>
             </md-content>
           </md-tab>
           <md-tab label="Experience">
             <md-content class="md-padding">
               <h1 class="md-display-2">Experience</h1>
-              <div class="experience">
-              <p><span class="topic">Ariveguru technologies</span></p>
-              <p><span class="topic">Year : </span><span class="answer">Jan 2018 - Present</span></p>
-              <p><span class="topic">Topic : </span><span class="answer">Sharanasangama App</span></p>
-              <p><span class="topic">Description : </span><span class="answer">PWA application both mobile browser and desktop browser for a community based social media. (Vuetify Material)</span></p>
-              <p><span class="topic">Role : </span><span class="answer">UI Developer</span></p>
-            </div>
-            <div class="experience">
-              <p><span class="topic">Ariveguru technologies</span></p>
-              <p><span class="topic">Year : </span><span class="answer">Jan 2018 - Present</span></p>
-              <p><span class="topic">Topic : </span><span class="answer">Flip2Flex</span></p>
-              <p><span class="topic">Description : </span><span class="answer">Cisco team generates an offer for partner and their client. They need to manage the offer list with licOPS team and the client’s.(Angular Material)</span></p>
-              <p><span class="topic">Role : </span><span class="answer">UI Developer</span></p>
-              </div>
-              <div class="experience">
-              <p><span class="topic">IBM India pvt ltd</span></p>
-              <p><span class="topic">Year : </span><span class="answer">Jan 2017 - Jun - 2017</span></p>
-              <p><span class="topic">Topic : </span><span class="answer">Certification As A Service</span></p>
-              <p><span class="topic">Description : </span><span class="answer">IBM product teams that use IBM JDK need to certify their product by running the JCK test suite. But since JCK has already been run against the IBM JDK builds we just do a comparison of the JDK listings (Customer list with Reference list) in order to certify the IBM product.</span></p>
-              <p><span class="topic">Role : </span><span class="answer">Java Developer</span></p>
-              </div>
-              <div class="experience">
-              <p><span class="topic">Toshiba Software India pvt ltd</span></p>
-              <p><span class="topic">Year : </span><span class="answer">Jun 2015 - Nov - 2015</span></p>
-              <p><span class="topic">Topic : </span><span class="answer">Finance Regimentation</span></p>
-              <p><span class="topic">Description : </span><span class="answer">The project is used to keep track of the Statement of Work (SOW) and to maintain the financial status of all the projects and invoice of Toshiba Company.</span></p>
-              <p><span class="topic">Role : </span><span class="answer">Java Developer</span></p>
+              <div class="exp" layout>
+                <img flex="33" src="ag_logo.png" height="100px" width="150px" style="margin:15px;" ng-click="Ariveguru($event)">
+                <img flex="33" src="IBM-Logo.png" height="100px" width="150px" style="margin:15px;" ng-click="IBM($event)">
+                <img flex="33" src="toshiba.png" height="100px" width="150px" style="margin:15px;" ng-click="Toshiba($event)">
               </div>
             </md-content>
           </md-tab>
@@ -85,15 +69,15 @@
             </md-content>
           </md-tab>
           <md-tab label="Skills">
-              <md-content class="md-padding">
-                <h1 class="md-display-2">Tab Three</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus
-                  volutpat
-                  neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices.
-                  Maecenas
-                  lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
-              </md-content>
-            </md-tab>
+            <md-content class="md-padding">
+              <h1 class="md-display-2">Tab Three</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus
+                volutpat
+                neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices.
+                Maecenas
+                lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+            </md-content>
+          </md-tab>
         </md-tabs>
       </div>
     </div>
