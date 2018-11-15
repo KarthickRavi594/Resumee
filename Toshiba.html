@@ -1,16 +1,18 @@
-<md-dialog style="height:300px;" ng-controller="DemoCtrl">
+<md-dialog ng-controller="DemoCtrl">
     <md-toolbar>
         <div class="md-toolbar-tools">
-            <i class="fa fa-window-close" aria-hidden="true" ng-click="cancel()"></i>
+            <h2>Toshiba</h2>
+            <span flex></span>
+            <img src="img/close.png" height="20px" width="20px" ng-click="cancel()" style="cursor:pointer">
         </div>
     </md-toolbar>
     <md-dialog-content>
         <div class="experience">
-            <p><span class="topic">{{toshiba.place}}</span></p>
-            <p><span class="topic">Year : </span><span class="answer">{{toshiba.Year}}</span></p>
-            <p><span class="topic">Topic : </span><span class="answer">{{toshiba.Topic}}</span></p>
-            <p><span class="topic">Description : </span><span class="answer">{{toshiba.Description}}</span></p>
-            <p><span class="topic">Role : </span><span class="answer">{{toshiba.Role}}</span></p>
+            <!-- <p><span class="topic">{{toshiba.place}}</span></p> -->
+            <p layout><span flex="20" class="topic">Topic : </span><span flex="80" class="answer1">{{toshiba.Topic}}</span></p>
+            <p layout><span flex="20" class="topic">Year : </span><span flex="80"class="answer">{{toshiba.Year}}</span></p>
+            <p layout><span flex="20" class="topic">Description : </span><span flex="80" class="answer">{{toshiba.Description}}</span></p>
+            <p layout><span flex="20" class="topic">Role : </span><span flex="80"class="answer">{{toshiba.Role}}</span></p>
         </div>
     </md-dialog-content>
 </md-dialog>

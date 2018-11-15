@@ -8,6 +8,13 @@
     margin: 5px;
     margin-bottom: 5px;
 }
+.answer{
+    font-size: 14px;
+}
+.answer1{
+    font-size: 16px;
+    font-weight: bold;
+}
 .border{
     background-color: #a54427da;
     border-radius: 50%;
@@ -41,9 +48,11 @@ md-tab-content>div{
 }
 .topic{
     font-weight: bold;
+    color: #a54427da;
 }
 .experience{
     margin: 8px;
+    padding:8px;
     /* margin-top: 8px; */
     border: 1px dotted black;
 }
@@ -83,6 +92,9 @@ md-tabs .md-tab.md-active{
 md-tab-item{
     color: black;
 }
+md-dialog-content{
+    padding:15px;
+}
 md-pagination-wrapper{
     position: absolute;
     right: 0;
@@ -91,5 +103,11 @@ md-tabs .md-tab {
     width: 100%;
 }
 md-dialog.md-transition-in{
-    height: 250px;
+    height: 475px;
+}
+
+@media screen and (max-width: 740px) {
+    .details{
+        display: none;
+    }
 }
