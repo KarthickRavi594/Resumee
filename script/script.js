@@ -31,6 +31,14 @@ angular.module('BlankApp', ['ngMaterial', 'ngMessages'])
             { "role": "Java Developer" },
             { "role": "UI Developer" },
         ];
+        $scope.intro = "Currently pursuing as a UI Developer in Ariveguru Technologies pvt ltd. Also have one year internship experience in two various companies (Toshiba Software India pvt ltd & IBM India pvt ltd) as a Web Application Developer.";
+        $scope.department = "M.Sc.Software Engineering (Integrated Course)";
+        $scope.institute = "Coimbatore Institute of Technology";
+        $scope.percentage = "72.3%";
+        $scope.academic = [
+            {"topic":"Smart Speed Monitor","description":"Designed a speed monitoring system using Intel Galileo board and providing functions like vehicle tracking, over speed notification.(Arduino C)"},
+            {"topic":"Firewall","description":"Firewall is an application which is used to block the unwanted IP packets. It will secure our system. (Java, script language)."}
+        ];
         $scope.Ariveguru = function (ev) {
             $mdDialog.show ({
                 clickOutsideToClose: true,

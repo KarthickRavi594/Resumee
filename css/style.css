@@ -2,7 +2,7 @@
     margin: 8px;
 }
 .image{
-    border-radius: 50%;
+    border-radius: 37%;
     height: 150px;
     width: 150px;
     margin: 5px;
@@ -17,7 +17,7 @@
 }
 .border{
     background-color: #a54427da;
-    border-radius: 50%;
+    border-radius: 37%;
     border: 1px solid #a54427da;
 }
 md-toolbar:not(.md-menu-toolbar) {
@@ -40,10 +40,11 @@ md-toolbar:not(.md-menu-toolbar) {
     font-size: 14px;
 }
 body{
-    overflow: auto;
+    overflow: hidden;
 }
 md-tab-content>div{
     height: 60%;
+    height: -moz-available;
     overflow: auto;
 }
 .topic{
@@ -79,15 +80,50 @@ md-tabs .md-tab.md-active{
     color: black;
     width:100%;
 }
+md-tabs-content-wrapper{
+    overflow: auto;
+    overflow-x: hidden;
+}
 .details{
     position: absolute;
     right: 30px;
     top: 15px;
+    margin:1%;
 }
 .md-tab{
     padding: 0;
     padding-top: 12px;
     padding-left: 0x;
+}
+.cit{
+    line-height: 1.5;
+    padding: 20px;
+}
+.intro{
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 10px;
+}
+ul{
+    margin: 0;
+}
+.left{
+    padding: 20px;
+}
+.objective{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+}
+li{
+    padding: 10px;
+    line-height: 1.5;
+}
+.right{
+    padding: 20px;
+}
+h1{
+    margin-bottom: 0;
 }
 md-tab-item{
     color: black;
@@ -103,7 +139,8 @@ md-tabs .md-tab {
     width: 100%;
 }
 md-dialog.md-transition-in{
-    height: 475px;
+    min-height: 275px;
+    width: 55%;
 }
 
 @media screen and (max-width: 740px) {

@@ -24,11 +24,11 @@
       <div flex="12" class="border">
         <img class="image" src="img/Karthick.jpg">
       </div>
-      <div flex="30" class="align">
-        <span class="heading">Karthick Ravichandran</span><br>
+      <div flex="45" class="align">
+        <span class="heading">Karthick Ravichandran</span><span class="designation">{{department}}</span><br>        
         <span class="designation" ng-repeat="roles in Designation">{{roles.role}}<br></span>
       </div>
-      <div flex="55" class="details">
+      <div flex="40" class="details">
         <div class="contact">{{contact.address}}<br></div>
         <div class="contact">{{contact.mobile}}<br></div>
         <div class="contact">{{contact.email}}<br></div>
@@ -40,12 +40,28 @@
           <md-tab label="About">
             <md-content class="md-padding">
               <h1 class="md-display-2">Introduction</h1>
-              <p>I am Karthick RaviChandran, I completed M.Sc software engineering 5 year integrated course in
-                Coimbatore institute of technology.</p>
-              <p>Currently I am working as an UI developer in a startup company(Ariveguru technologies pvt ltd) in
-                Bangalore. </p>
-              <p>Also have one year internship experience in two various companies (Toshiba Software India pvt ltd &
-                IBM India pvt ltd) as a Web Application Developer..</p>
+              <div layout>
+                <div flex="45" class="left">
+                  <div class="objective">
+                    Objective
+                  </div>
+                  <div class="intro">
+                    {{intro}}
+                  </div>
+                </div>
+                <div flex class="right">
+                  <div class="objective">
+                    Hobbies
+                  </div>
+                  <div class="list">
+                    <ul>
+                      <li>Writing Tamil poems in my own blogs <a href="http://karthilancer05.blogspot.com/" target="_blank">http://karthilancer05.blogspot.com/</a> &
+                        <a href="http://karthick594.blogspot.in/" target="_blank">http://karthick594.blogspot.in/</a> </li>
+                      <li>Sample visit <a href="https://welcomefoodlover.000webhostapp.com/" target="_blank">https://welcomefoodlover.000webhostapp.com/</a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </md-content>
           </md-tab>
           <md-tab label="Experience">
@@ -60,12 +76,25 @@
           </md-tab>
           <md-tab label="Education">
             <md-content class="md-padding">
-              <h1 class="md-display-2">Tab Three</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus
-                volutpat
-                neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices.
-                Maecenas
-                lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+              <h1 class="md-display-2">Education</h1>
+              <div layout>
+                <div flex="25">
+                  <img src="img/cit.png" height="150px" width="150px" style="margin:15px;" ng-click="Cit($event)">
+                </div>
+                <div flex="55" class="cit">
+                  The V. Rangasamy Naidu Educational Trust devoted to the cause of promoting technical and scientific
+                  literacy, established Coimbatore Institute of Technology (CIT) in Coimbatore, Tamil Nadu, South India
+                  in 1956. CIT is one of the most reputed and prestigious educational institutions in India. The
+                  Institute backed by World Class research and development over the years attained autonomous status in
+                  1987
+                </div>
+              </div>
+              <div>
+                <div class="experience" ng-repeat="exp in academic">
+                  <p layout><span flex="20" class="topic">Topic : </span><span flex="80" class="answer1">{{exp.topic}}</span></p>
+                  <p layout><span flex="20" class="topic">Description : </span><span flex="80" class="answer">{{exp.description}}</span></p>
+                </div>
+              </div>
             </md-content>
           </md-tab>
           <md-tab label="Skills">
