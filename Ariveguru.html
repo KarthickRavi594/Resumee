@@ -1,16 +1,18 @@
-<md-dialog style="height:300px;" ng-controller="DemoCtrl">
+<md-dialog ng-controller="DemoCtrl">
     <md-toolbar>
         <div class="md-toolbar-tools">
-            <i class="fa fa-window-close" aria-hidden="true" ng-click="cancel()"></i>
+            <h2>Ariveguru</h2>
+            <span flex></span>
+            <img src="img/close.png" height="20px" width="20px" ng-click="cancel()" style="cursor:pointer">
         </div>
     </md-toolbar>
     <md-dialog-content>
         <div class="experience" ng-repeat="exp in ariveguru">
-            <p><span class="topic">{{exp.place}}</span></p>
-            <p><span class="topic">Year : </span><span class="answer">{{exp.Year}}</span></p>
-            <p><span class="topic">Topic : </span><span class="answer">{{exp.Topic}}</span></p>
-            <p><span class="topic">Description : </span><span class="answer">{{exp.Description}}</span></p>
-            <p><span class="topic">Role : </span><span class="answer">{{exp.Role}}</span></p>
+            <!-- <p><span class="topic">{{exp.place}}</span></p> -->
+            <p layout><span flex="20" class="topic">Topic : </span><span flex="80" class="answer1">{{exp.Topic}}</span></p>
+            <p layout><span flex="20" class="topic">Year : </span><span flex="80" class="answer">{{exp.Year}}</span></p>
+            <p layout><span flex="20" class="topic">Description : </span><span flex="80" class="answer">{{exp.Description}}</span></p>
+            <p layout><span flex="20" class="topic">Role : </span><span flex="80" class="answer">{{exp.Role}}</span></p>
         </div>
     </md-dialog-content>
 </md-dialog>

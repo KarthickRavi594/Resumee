@@ -70,4 +70,7 @@ angular.module('BlankApp', ['ngMaterial', 'ngMessages'])
                 }
              });
         };
+        $scope.cancel = function(){
+            $mdDialog.cancel();
+        }
     });
