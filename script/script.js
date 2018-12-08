@@ -31,6 +31,7 @@ angular.module('BlankApp', ['ngMaterial', 'ngMessages'])
             { "role": "Java Developer" },
             { "role": "UI Developer" },
         ];
+        $scope.citCollege = "The V. Rangasamy Naidu Educational Trust devoted to the cause of promoting technical and scientific literacy, established Coimbatore Institute of Technology (CIT) in Coimbatore, Tamil Nadu, South India in 1956. CIT is one of the most reputed and prestigious educational institutions in India. The Institute backed by World Class research and development over the years attained autonomous status in 1987"
         $scope.intro = "Currently pursuing as a UI Developer in Ariveguru Technologies pvt ltd. Also have one year internship experience in two various companies (Toshiba Software India pvt ltd & IBM India pvt ltd) as a Web Application Developer.";
         $scope.department = "M.Sc.Software Engineering (Integrated Course)";
         $scope.institute = "Coimbatore Institute of Technology";
