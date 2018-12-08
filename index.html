@@ -25,7 +25,7 @@
         <img class="image" src="img/Karthick.jpg">
       </div>
       <div flex="45" class="align">
-        <span class="heading">Karthick Ravichandran</span><span class="designation">{{department}}</span><br>        
+        <span class="heading">Karthick Ravichandran</span><span class="designation">{{department}}</span><br>
         <span class="designation" ng-repeat="roles in Designation">{{roles.role}}<br></span>
       </div>
       <div flex="40" class="details">
@@ -55,9 +55,12 @@
                   </div>
                   <div class="list">
                     <ul>
-                      <li>Writing Tamil poems in my own blogs <a href="http://karthilancer05.blogspot.com/" target="_blank">http://karthilancer05.blogspot.com/</a> &
-                        <a href="http://karthick594.blogspot.in/" target="_blank">http://karthick594.blogspot.in/</a> </li>
-                      <li>Sample visit <a href="https://welcomefoodlover.000webhostapp.com/" target="_blank">https://welcomefoodlover.000webhostapp.com/</a> </li>
+                      <li>Writing Tamil poems in my own blogs <a href="http://karthilancer05.blogspot.com/" target="_blank">http://karthilancer05.blogspot.com/</a>
+                        &
+                        <a href="http://karthick594.blogspot.in/" target="_blank">http://karthick594.blogspot.in/</a>
+                      </li>
+                      <li>Sample visit <a href="https://welcomefoodlover.000webhostapp.com/" target="_blank">https://welcomefoodlover.000webhostapp.com/</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -99,12 +102,27 @@
           </md-tab>
           <md-tab label="Skills">
             <md-content class="md-padding">
-              <h1 class="md-display-2">Tab Three</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus
-                volutpat
-                neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices.
-                Maecenas
-                lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+              <h1 class="md-display-2">Skills</h1>
+              <div layout>
+                <div flex="45" class="left">
+                  <div class="list" ng-repeat="skill in techskill">
+                    <ul>
+                      <li>
+                        {{skill.skill}}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div flex class="right">
+                  <div class="list" ng-repeat="ide in techide">
+                    <ul>
+                      <li>
+                        {{ide.ide}}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </md-content>
           </md-tab>
         </md-tabs>
@@ -112,4 +130,5 @@
     </div>
   </div>
 </body>
+
 </html>

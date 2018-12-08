@@ -1,8 +1,10 @@
 .container{
     margin: 8px;
+    height: 100%;
+    overflow: auto;
 }
 .image{
-    border-radius: 37%;
+    border-radius: 50%;
     height: 150px;
     width: 150px;
     margin: 5px;
@@ -17,8 +19,10 @@
 }
 .border{
     background-color: #a54427da;
-    border-radius: 37%;
+    border-radius: 50%;
     border: 1px solid #a54427da;
+    margin-bottom: 3%;
+    margin-top: 1%;
 }
 md-toolbar:not(.md-menu-toolbar) {
     background-color: #a54427da;
@@ -42,11 +46,11 @@ md-toolbar:not(.md-menu-toolbar) {
 body{
     overflow: hidden;
 }
-md-tab-content>div{
+/* md-tab-content>div{
     height: 60%;
     height: -moz-available;
     overflow: auto;
-}
+} */
 .topic{
     font-weight: bold;
     color: #a54427da;
@@ -85,10 +89,7 @@ md-tabs-content-wrapper{
     overflow-x: hidden;
 }
 .details{
-    position: absolute;
-    right: 30px;
-    top: 15px;
-    margin:1%;
+    margin-top:3%;
 }
 .md-tab{
     padding: 0;

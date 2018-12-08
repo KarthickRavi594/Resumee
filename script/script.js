@@ -39,6 +39,23 @@ angular.module('BlankApp', ['ngMaterial', 'ngMessages'])
             {"topic":"Smart Speed Monitor","description":"Designed a speed monitoring system using Intel Galileo board and providing functions like vehicle tracking, over speed notification.(Arduino C)"},
             {"topic":"Firewall","description":"Firewall is an application which is used to block the unwanted IP packets. It will secure our system. (Java, script language)."}
         ];
+        $scope.techskill = [
+            {"skill":"C"},
+            {"skill":"Java"},
+            {"skill":"J2EE"},
+            {"skill":"HTML"},
+            {"skill":"CSS"},
+            {"skill":"AngularJS"},
+            {"skill":"Angular Material Design"},
+            {"skill":"Vuetify Material Design"},
+            {"skill":"Katalon script Automation"},
+        ],
+        $scope.techide = [
+            {"ide":"Netbeans"},
+            {"ide":"Eclipse"},
+            {"ide":"Visual studio code"},
+            {"ide":"Katalon"},
+        ],
         $scope.Ariveguru = function (ev) {
             $mdDialog.show ({
                 clickOutsideToClose: true,
