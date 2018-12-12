@@ -53,6 +53,8 @@ body{
 } */
 .topic{
     font-weight: bold;
+    word-wrap: break-word;
+    margin-right: 5px;
     color: #a54427da;
 }
 .experience{
