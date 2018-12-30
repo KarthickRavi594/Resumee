@@ -21,11 +21,12 @@
   <script src="script/script.js"></script>
   <div class="container" ng-controller="DemoCtrl">
     <div layout class="header">
-      <div flex="12" class="border">
+      <!-- <div flex="12" class="border"> -->
         <img class="image" src="img/Karthick.jpg">
-      </div>
+      <!-- </div> -->
       <div flex="45" class="align">
-        <span class="heading">Karthick Ravichandran</span><span class="designation">{{department}}</span><br>
+        <span class="heading">Karthick Ravichandran</span><br>
+        <span class="designation">{{department}}</span><br>
         <span class="designation" ng-repeat="roles in Designation">{{roles.role}}<br></span>
       </div>
       <div flex="40" class="details">
@@ -40,7 +41,7 @@
           <md-tab label="About">
             <md-content class="md-padding">
               <h1 class="md-display-2">Introduction</h1>
-              <div layout>
+              <div layout class="desktop">
                 <div flex="45" class="left">
                   <div class="objective">
                     Objective
@@ -59,10 +60,31 @@
                         &
                         <a href="http://karthick594.blogspot.in/" target="_blank">http://karthick594.blogspot.in/</a>
                       </li>
-                      <li>Sample visit <a href="https://welcomefoodlover.000webhostapp.com/" target="_blank">https://welcomefoodlover.000webhostapp.com/</a>
-                      </li>
+                      <!-- <li>Sample visit <a href="https://welcomefoodlover.000webhostapp.com/" target="_blank">https://welcomefoodlover.000webhostapp.com/</a>
+                      </li> -->
                     </ul>
                   </div>
+                </div>
+              </div>
+              <div class="mobile">
+                <div class="objective">
+                  Objective
+                </div>
+                <div class="intro">
+                  {{intro}}
+                </div>
+                <div class="objective">
+                  Hobbies
+                </div>
+                <div class="list">
+                  <ul>
+                    <li>Writing Tamil poems in my own blogs <a href="http://karthilancer05.blogspot.com/" target="_blank">http://karthilancer05.blogspot.com/</a>
+                      &
+                      <a href="http://karthick594.blogspot.in/" target="_blank">http://karthick594.blogspot.in/</a>
+                    </li>
+                    <!-- <li>Sample visit <a href="https://welcomefoodlover.000webhostapp.com/" target="_blank">https://welcomefoodlover.000webhostapp.com/</a>
+                    </li> -->
+                  </ul>
                 </div>
               </div>
             </md-content>

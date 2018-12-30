@@ -145,9 +145,17 @@ md-dialog.md-transition-in{
     min-height: 275px;
     width: 55%;
 }
-
+.mobile{
+    display: none;
+}
 @media screen and (max-width: 740px) {
     .details{
         display: none;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: initial;
     }
 }
