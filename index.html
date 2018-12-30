@@ -92,21 +92,32 @@
           <md-tab label="Experience">
             <md-content class="md-padding">
               <h1 class="md-display-2">Experience</h1>
-              <div class="exp" layout>
+              <div class="exp desktop" layout>
                 <img flex="33" src="img/ag_logo.png" height="100px" width="150px" style="margin:15px;" ng-click="Ariveguru($event)">
                 <img flex="33" src="img/IBM-Logo.png" height="100px" width="150px" style="margin:15px;" ng-click="IBM($event)">
                 <img flex="33" src="img/toshiba.png" height="100px" width="150px" style="margin:15px;" ng-click="Toshiba($event)">
+              </div>
+              <div class="mobile">
+                <img src="img/ag_logo.png" height="100px" width="150px" style="margin:15px;" ng-click="Ariveguru($event)">
+                <img src="img/IBM-Logo.png" height="100px" width="150px" style="margin:15px;" ng-click="IBM($event)">
+                <img src="img/toshiba.png" height="100px" width="150px" style="margin:15px;" ng-click="Toshiba($event)">
               </div>
             </md-content>
           </md-tab>
           <md-tab label="Education">
             <md-content class="md-padding">
               <h1 class="md-display-2">Education</h1>
-              <div layout>
+              <div layout class="desktop">
                 <div flex="25">
                   <img src="img/cit.png" height="150px" width="150px" style="margin:15px;" ng-click="Cit($event)">
                 </div>
                 <div flex="55" class="cit">
+                  {{citCollege}}
+                </div>
+              </div>
+              <div class="mobile">
+                <img src="img/cit.png" height="150px" width="150px" style="margin:15px;" ng-click="Cit($event)">
+                <div class="cit">
                   {{citCollege}}
                 </div>
               </div>

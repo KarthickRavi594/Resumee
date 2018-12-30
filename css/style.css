@@ -33,6 +33,7 @@ md-toolbar:not(.md-menu-toolbar) {
     /* border-radius: 50%; */
 }
 .heading{
+    overflow-wrap: break-word;
     margin: 5px;
     line-height: 36px;
     color: black;
@@ -157,5 +158,8 @@ md-dialog.md-transition-in{
     }
     .mobile{
         display: initial;
+    }
+    .mobalign{
+        margin: 5px;
     }
 }
