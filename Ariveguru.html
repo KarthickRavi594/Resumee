@@ -7,12 +7,18 @@
         </div>
     </md-toolbar>
     <md-dialog-content>
-        <div class="experience" ng-repeat="exp in ariveguru">
+        <div class="experience desktop" ng-repeat="exp in ariveguru">
             <!-- <p><span class="topic">{{exp.place}}</span></p> -->
             <p layout><span flex="15" class="topic">Topic : </span><span flex="80" class="answer1">{{exp.Topic}}</span></p>
             <p layout><span flex="15" class="topic">Year : </span><span flex="80" class="answer">{{exp.Year}}</span></p>
             <p layout><span flex="15" class="topic">Description : </span><span flex="80" class="answer">{{exp.Description}}</span></p>
             <p layout><span flex="15" class="topic">Role : </span><span flex="80" class="answer">{{exp.Role}}</span></p>
+        </div>
+        <div class="mobile" ng-repeat="exp in ariveguru">
+            <div class="mobalign answer1">{{exp.Topic}}</div>
+            <div  class="mobalign topic">Year : </div><div class="mobalign answer">{{exp.Year}}</div>
+            <div  class="mobalign topic">Description : </div><div class="mobalign answer">{{exp.Description}}</div>
+            <div  class="mobalign topic">Role : </div><div class="mobalign answer">{{exp.Role}}</div>
         </div>
     </md-dialog-content>
 </md-dialog>

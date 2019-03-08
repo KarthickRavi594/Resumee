@@ -7,12 +7,18 @@
         </div>
     </md-toolbar>
     <md-dialog-content>
-        <div class="experience">
+        <div class="experience desktop">
             <!-- <p><span class="topic">{{toshiba.place}}</span></p> -->
             <p layout><span flex="15" class="topic">Topic : </span><span flex="80" class="answer1">{{toshiba.Topic}}</span></p>
             <p layout><span flex="15" class="topic">Year : </span><span flex="80"class="answer">{{toshiba.Year}}</span></p>
             <p layout><span flex="15" class="topic">Description : </span><span flex="80" class="answer">{{toshiba.Description}}</span></p>
             <p layout><span flex="15" class="topic">Role : </span><span flex="80"class="answer">{{toshiba.Role}}</span></p>
+        </div>
+        <div class="mobile">
+            <div class="mobalign answer1">{{toshiba.Topic}}</div>
+            <div class="mobalign topic">Year : </div> <div class="mobalign answer">{{toshiba.Year}}</div>
+            <div class="mobalign topic">Description : </div> <div class="mobalign answer">{{toshiba.Description}}</div>
+            <div class="mobalign topic">Role : </div> <div class="mobalign answer">{{toshiba.Role}}</div>
         </div>
     </md-dialog-content>
 </md-dialog>
