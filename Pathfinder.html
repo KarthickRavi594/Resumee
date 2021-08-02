@@ -1,0 +1,31 @@
+<md-dialog ng-controller="DemoCtrl">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2>Pathfinder</h2>
+            <span flex></span>
+            <img src="img/close.png" height="20px" width="20px" ng-click="cancel()" style="cursor:pointer">
+        </div>
+    </md-toolbar>
+    <md-dialog-content>
+        <div class="experience desktop" ng-repeat="exp in pathfinder">
+            <!-- <p><span class="topic">{{toshiba.place}}</span></p> -->
+            <p layout><span flex="15" class="topic">Topic : </span><span flex="80" class="answer1">{{exp.Topic}}</span>
+            </p>
+            <p layout><span flex="15" class="topic">Year : </span><span flex="80" class="answer">{{exp.Year}}</span>
+            </p>
+            <p layout><span flex="15" class="topic">Description : </span><span flex="80"
+                    class="answer">{{exp.Description}}</span></p>
+            <p layout><span flex="15" class="topic">Role : </span><span flex="80" class="answer">{{exp.Role}}</span>
+            </p>
+        </div>
+        <div class="mobile" ng-repeat="exp in pathfinder">
+            <div class="mobalign answer1">{{exp.Topic}}</div>
+            <div class="mobalign topic">Year : </div>
+            <div class="mobalign answer">{{exp.Year}}</div>
+            <div class="mobalign topic">Description : </div>
+            <div class="mobalign answer">{{exp.Description}}</div>
+            <div class="mobalign topic">Role : </div>
+            <div class="mobalign answer">{{exp.Role}}</div>
+        </div>
+    </md-dialog-content>
+</md-dialog>

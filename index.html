@@ -22,14 +22,14 @@
   <div class="container" ng-controller="DemoCtrl">
     <div layout class="header">
       <!-- <div flex="12" class="border"> -->
-        <img class="image" src="img/Karthick.jpg">
+      <img class="image" src="img/Karthick1.jpeg">
       <!-- </div> -->
-      <div flex="45" class="align">
+      <div flex="46" class="align">
         <span class="heading">Karthick Ravichandran</span><br>
-        <span class="designation">{{department}}</span><br>
-        <span class="designation" ng-repeat="roles in Designation">{{roles.role}}<br></span>
+        <span class="desktop designation">{{department}}</span><br>
+        <span class="designation">{{role}}<br></span>
       </div>
-      <div flex="40" class="details">
+      <div class="details">
         <div class="contact">{{contact.address}}<br></div>
         <div class="contact">{{contact.mobile}}<br></div>
         <div class="contact">{{contact.email}}<br></div>
@@ -42,7 +42,7 @@
             <md-content class="md-padding">
               <h1 class="md-display-2">Introduction</h1>
               <div layout class="desktop">
-                <div flex="45" class="left">
+                <div class="left">
                   <div class="objective">
                     Objective
                   </div>
@@ -50,21 +50,9 @@
                     {{intro}}
                   </div>
                 </div>
-                <div flex class="right">
-                  <div class="objective">
-                    Hobbies
-                  </div>
-                  <div class="list">
-                    <ul>
-                      <li>Writing Tamil poems in my own blogs <a href="https://karthicklancer.blogspot.com/" target="_blank">https://karthicklancer.blogspot.com/</a>
-                        &
-                        <a href="http://karthick594.blogspot.com/" target="_blank">http://karthick594.blogspot.com/</a>
-                      </li>
-                      <!-- <li>Sample visit <a href="https://welcomefoodlover.000webhostapp.com/" target="_blank">https://welcomefoodlover.000webhostapp.com/</a>
-                      </li> -->
-                    </ul>
-                  </div>
-                </div>
+                <!-- <div flex class="right">
+                  
+                </div> -->
               </div>
               <div class="mobile">
                 <div class="objective">
@@ -73,34 +61,48 @@
                 <div class="intro">
                   {{intro}}
                 </div>
-                <div class="objective">
-                  Hobbies
-                </div>
-                <div class="list">
-                  <ul>
-                    <li>Writing Tamil poems in my own blogs <a href="http://karthilancer05.blogspot.com/" target="_blank">http://karthilancer05.blogspot.com/</a>
-                      &
-                      <a href="http://karthick594.blogspot.in/" target="_blank">http://karthick594.blogspot.in/</a>
-                    </li>
-                    <!-- <li>Sample visit <a href="https://welcomefoodlover.000webhostapp.com/" target="_blank">https://welcomefoodlover.000webhostapp.com/</a>
-                    </li> -->
-                  </ul>
-                </div>
+
               </div>
             </md-content>
           </md-tab>
           <md-tab label="Experience">
             <md-content class="md-padding">
-              <h1 class="md-display-2">Experience</h1>
-              <div class="exp desktop" layout>
-                <img flex="33" src="img/ag_logo.png" height="100px" width="150px" style="margin:15px;" ng-click="Ariveguru($event)">
-                <img flex="33" src="img/IBM-Logo.png" height="100px" width="150px" style="margin:15px;" ng-click="IBM($event)">
-                <img flex="33" src="img/toshiba.png" height="100px" width="150px" style="margin:15px;" ng-click="Toshiba($event)">
+              <!-- <h1 class="md-display-2">Experience</h1> -->
+              <div class="exp desktop">
+                <h2>Internship</h2>
+                <div layout>
+                  <img flex="20" src="img/toshiba.png" height="100px" width="250px" style="margin:15px;padding: 10px;"
+                    ng-click="Toshiba($event)">
+                  <img flex="20" src="img/IBM-Logo.png" height="100px" width="250px" style="margin:15px;padding: 10px;"
+                    ng-click="IBM($event)">
+                </div>
+                <h2>Full-Time</h2>
+                <div layout>
+                  <img flex="20" src="img/ag_logo.png" height="100px" width="250px" style="margin:15px;padding: 10px;"
+                    ng-click="Ariveguru($event)">
+                  <img flex="20" src="img/pathfinder.jpeg" height="200px" width="250px"
+                    style="margin:15px;padding: 10px;background: transparent;" ng-click="Pathfinder($event)">
+                  <img flex="20" src="img/hubino.jpeg" height="100px" width="250px"
+                    style="margin:15px;padding: 10px;background: transparent;" ng-click="Hubino($event)">
+                </div>
               </div>
               <div class="mobile">
-                <img src="img/ag_logo.png" height="100px" width="150px" style="margin:15px;" ng-click="Ariveguru($event)">
-                <img src="img/IBM-Logo.png" height="100px" width="150px" style="margin:15px;" ng-click="IBM($event)">
-                <img src="img/toshiba.png" height="100px" width="150px" style="margin:15px;" ng-click="Toshiba($event)">
+                <h2>Internship</h2>
+                <div layout="column">
+                  <img src="img/toshiba.png" height="100px" width="150px" style="margin:15px;padding: 10px;"
+                    ng-click="Toshiba($event)">
+                  <img src="img/IBM-Logo.png" height="100px" width="150px" style="margin:15px;padding: 10px;"
+                    ng-click="IBM($event)">
+                </div>
+                <h2>Full-Time</h2>
+                <div layout="column">
+                  <img src="img/ag_logo.png" height="100px" width="150px" style="margin:15px;padding: 10px;"
+                    ng-click="Ariveguru($event)">
+                  <img src="img/pathfinder.jpeg" height="100px" width="150px" style="margin:15px;padding: 10px;"
+                    ng-click="Pathfinder($event)">
+                  <img src="img/hubino.jpeg" height="100px" width="150px" style="margin:15px;padding: 10px;"
+                    ng-click="Hubino($event)">
+                </div>
               </div>
             </md-content>
           </md-tab>
@@ -123,8 +125,10 @@
               </div>
               <div>
                 <div class="experience" ng-repeat="exp in academic">
-                  <p layout><span flex="20" class="topic">Topic : </span><span flex="80" class="answer1">{{exp.topic}}</span></p>
-                  <p layout><span flex="20" class="topic">Description : </span><span flex="80" class="answer">{{exp.description}}</span></p>
+                  <p layout><span flex="20" class="topic">Topic : </span><span flex="80"
+                      class="answer1">{{exp.topic}}</span></p>
+                  <p layout><span flex="20" class="topic">Description : </span><span flex="80"
+                      class="answer">{{exp.description}}</span></p>
                 </div>
               </div>
             </md-content>
@@ -133,7 +137,7 @@
             <md-content class="md-padding">
               <h1 class="md-display-2">Skills</h1>
               <div layout>
-                <div flex="45" class="left">
+                <div flex="40" class="left">
                   <div class="list" ng-repeat="skill in techskill">
                     <ul>
                       <li>
@@ -141,16 +145,29 @@
                       </li>
                     </ul>
                   </div>
+                  <h2 class="mobile">Certification</h2>
+                  <img class="certificatemobile" src="img/Karthick_Certificate.png" height="260px" width="auto"
+                    style="margin-top: 2%;" />
                 </div>
                 <div flex class="right">
-                  <div class="list" ng-repeat="ide in techide">
-                    <ul>
-                      <li>
-                        {{ide.ide}}
-                      </li>
-                    </ul>
+                  <div class="list">
+                    <h2>Certification</h2>
+                    <img class="certificateDesktop" src="img/Karthick_Certificate.png" height="450px" />
                   </div>
                 </div>
+
+              </div>
+              <div class="objective">
+                Hobbies
+              </div>
+              <div class="list">
+                <ul>
+                  <li>Writing Tamil poems in my own blogs <a href="https://karthicklancer.blogspot.com/"
+                      target="_blank">https://karthicklancer.blogspot.com/</a>
+                    &
+                    <a href="http://karthick594.blogspot.com/" target="_blank">http://karthick594.blogspot.com/</a>
+                  </li>
+                </ul>
               </div>
             </md-content>
           </md-tab>
@@ -159,4 +176,5 @@
     </div>
   </div>
 </body>
+
 </html>
