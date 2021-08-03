@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body ng-app="BlankApp" ng-cloak>
+<body ng-app="BlankApp" ng-cloak background="img/Karthick1.jpeg">
   <!-- Angular Material requires Angular.js Libraries -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
@@ -21,19 +21,21 @@
   <script src="script/script.js"></script>
   <div class="container" ng-controller="DemoCtrl">
     <div layout class="header">
-      <!-- <div flex="12" class="border"> -->
-      <img class="image" src="img/Karthick1.jpeg">
-      <!-- </div> -->
-      <div flex="46" class="align">
+      <!-- <div class="details">
+        <div class="contact">{{contact.address}}<br></div>
+        <div class="contact">{{contact.mobile}}<br></div>
+        <div class="contact">{{contact.email}}<br></div>
+      </div> -->
+      <div flex="86" class="align">
         <span class="heading">Karthick Ravichandran</span><br>
         <span class="desktop designation">{{department}}</span><br>
         <span class="designation">{{role}}<br></span>
       </div>
-      <div class="details">
-        <div class="contact">{{contact.address}}<br></div>
-        <div class="contact">{{contact.mobile}}<br></div>
-        <div class="contact">{{contact.email}}<br></div>
-      </div>
+      <!-- <div flex="12">
+      <img class="image" src="img/Karthick1.jpeg">
+      </div> -->
+      
+      
     </div>
     <div>
       <div class="content">
