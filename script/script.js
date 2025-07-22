@@ -42,7 +42,7 @@ angular.module('BlankApp', ['ngMaterial', 'ngMessages'])
         ];
         $scope.role = "Software Developer"
         $scope.citCollege = "The V. Rangasamy Naidu Educational Trust devoted to the cause of promoting technical and scientific literacy, established Coimbatore Institute of Technology (CIT) in Coimbatore, Tamil Nadu, South India in 1956. CIT is one of the most reputed and prestigious educational institutions in India. The Institute backed by World Class research and development over the years attained autonomous status in 1987"
-        $scope.intro = "3 years and 11 months as a Software Engineer Including 1 year of internship experience in web development. Highly skilled at ES6+, Javascript, Angular, React.js, Node.js, Postgresql, Mongodb, AWS and Git.";
+        $scope.intro = "Software Engineer with 7+ years of experience in developing web applications. Proficient in JS, React, Node.js, AWS, and Git. Strong background in leading teams, building scalable front-end/back-end systems, and delivering business-critical features.";
         $scope.department = "M.Sc.Software Engineering (Integrated Course)";
         $scope.institute = "Coimbatore Institute of Technology";
         $scope.percentage = "72.3%";
