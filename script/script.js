@@ -40,7 +40,7 @@ angular.module('BlankApp', ['ngMaterial', 'ngMessages'])
             { "role": "Java Developer" },
             { "role": "UI Developer" },
         ];
-        $scope.role = "Software Developer"
+        $scope.role = "Lead Engineer"
         $scope.citCollege = "The V. Rangasamy Naidu Educational Trust devoted to the cause of promoting technical and scientific literacy, established Coimbatore Institute of Technology (CIT) in Coimbatore, Tamil Nadu, South India in 1956. CIT is one of the most reputed and prestigious educational institutions in India. The Institute backed by World Class research and development over the years attained autonomous status in 1987"
         $scope.intro = "Software Engineer with 7+ years of experience in developing web applications. Proficient in JS, React, Node.js, AWS, and Git. Strong background in leading teams, building scalable front-end/back-end systems, and delivering business-critical features.";
         $scope.department = "M.Sc.Software Engineering (Integrated Course)";
