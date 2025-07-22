@@ -14,9 +14,9 @@ md-content {
 }
 .image {
   align-content: flex-end;
-  /* border-radius: 50%; */
+  border-radius: 50%;
   height: 60%;
-  width: 20%;
+  width: 11%;
   margin: 5px;
   margin-bottom: 5px;
 }
