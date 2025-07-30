@@ -26,6 +26,12 @@ angular.module('BlankApp', ['ngMaterial', 'ngMessages'])
             { "place": "Hubino", "Year": "May 2021 - Present", "Topic": "Apple pass", "Description": "It is a wallet pass (Equivalent to QR Code) generation service. It accepts the information provided by the user and converts it into the wallet pass which can be accessible by apple scan.", "Role": "Software Developer" },
             { "place": "Hubino", "Year": "May 2021 - Present", "Topic": "Experience Builder", "Description": "A web application to show the concept skills with hierarchy relationship diagrams using joint technology. Displaying the concept values with conditional blocks like expression block, statement block, etc.", "Role": "Software Developer" },
         ];
+        $scope.qburst = [
+            { "place": "QBurst Technologies", "Year": "Jan 2022 - Nov 2022", "Topic": "Store Portal", "Description": "Delivered the drag and drop components with dynamic size of layout changes.", "Role": "Tech Lead" },
+            { "place": "QBurst Technologies", "Year": "Nov 2022 - Apr 2023", "Topic": "NYU Langone", "Description": "Automated student DB updates; developed UI enhancements in React and Node.", "Role": "Full Stack" },
+            { "place": "QBurst Technologies", "Year": "May 2023 - Jan 2025", "Topic": "MediaOcean", "Description": "Designed modular UI components, export features, and cost-type automation.", "Role": "Front End" },
+            { "place": "QBurst Technologies", "Year": "Feb 2025 - Present", "Topic": "Document Management System", "Description": "Built PDF viewer integration with SharePoint and S3 using React and Apryse.", "Role": "Module Lead" },
+        ];
         $scope.ariveguru = [
             { "place": "Ariveguru technologies", "Year": "Jul 2018 - Jan 2019", "Topic": "Sharanasangama App", "Description": "PWA application both mobile browser and desktop browser for a community based social media. (Vuetify Material)", "Role": "UI Developer" },
             { "place": "Ariveguru technologies", "Year": "Jan 2018 - Sep 2019", "Topic": "Flip2Flex", "Description": "Cisco team generates an offer for partner and their client. They need to manage the offer list with licOPS team and the client’s.(Angular Material)", "Role": "UI Developer" },
@@ -123,6 +129,19 @@ angular.module('BlankApp', ['ngMaterial', 'ngMessages'])
                 scope: $scope,
                 preserveScope: true,
                 templateUrl: 'Toshiba.html',
+                controller: function DemoCtrl($scope, $mdDialog) {
+                    $scope.closeDialog = function () {
+                        $mdDialog.hide();
+                    }
+                }
+            });
+        };
+        $scope.QBurst = function (ev) {
+            $mdDialog.show({
+                clickOutsideToClose: true,
+                scope: $scope,
+                preserveScope: true,
+                templateUrl: 'QBurst.html',
                 controller: function DemoCtrl($scope, $mdDialog) {
                     $scope.closeDialog = function () {
                         $mdDialog.hide();
